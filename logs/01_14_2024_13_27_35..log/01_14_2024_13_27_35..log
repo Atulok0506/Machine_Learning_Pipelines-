@@ -1,0 +1,5 @@
+[ 2024-01-14 13:27:36,043 ] 96 werkzeug WARNING -  * Debugger is active!
+[ 2024-01-14 13:27:36,135 ] 96 werkzeug INFO -  * Debugger PIN: 127-202-901
+[ 2024-01-14 13:27:41,534 ] 8 root INFO - we are testing methods of logging
+[ 2024-01-14 13:27:41,536 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 13:27:41] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 13:27:42,003 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 13:27:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

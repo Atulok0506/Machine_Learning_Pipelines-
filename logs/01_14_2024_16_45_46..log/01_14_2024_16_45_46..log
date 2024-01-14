@@ -1,0 +1,6 @@
+[ 2024-01-14 16:45:46,819 ] 96 werkzeug WARNING -  * Debugger is active!
+[ 2024-01-14 16:45:46,850 ] 96 werkzeug INFO -  * Debugger PIN: 127-202-901
+[ 2024-01-14 16:46:35,288 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom filec]
+[ 2024-01-14 16:46:35,288 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 16:46:35] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 16:46:35,427 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 16:46:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-01-14 16:47:13,804 ] 96 werkzeug INFO -  * Detected change in 'C:\\Users\\Atul kishore\\Documents\\Machine _Learning_Project_Pipelines\\Machine_Learning_Pipelines-\\app.py', reloading
