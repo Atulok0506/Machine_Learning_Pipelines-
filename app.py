@@ -13,7 +13,7 @@ def index():
     except Exception as e:
         abc = CustomException(e,sys)
         logging.info(abc.error_message)
-        return "welcome to Atul Kishore **"
+        return "welcome to Atul Kishore ***"
 
 if __name__ == "__main__":
     app.run(debug=True)

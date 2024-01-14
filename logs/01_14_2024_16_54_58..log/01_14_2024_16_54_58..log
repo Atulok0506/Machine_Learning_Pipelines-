@@ -1,0 +1,14 @@
+[ 2024-01-14 16:54:58,391 ] 96 werkzeug WARNING -  * Debugger is active!
+[ 2024-01-14 16:54:58,406 ] 96 werkzeug INFO -  * Debugger PIN: 127-202-901
+[ 2024-01-14 17:25:37,626 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom file]
+[ 2024-01-14 17:25:37,632 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 17:25:37] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 21:45:17,811 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom file]
+[ 2024-01-14 21:45:17,811 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 21:45:17] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 21:45:20,167 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom file]
+[ 2024-01-14 21:45:20,167 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 21:45:20] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 21:45:25,359 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom file]
+[ 2024-01-14 21:45:25,359 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 21:45:25] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 21:45:28,499 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom file]
+[ 2024-01-14 21:45:28,500 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 21:45:28] "GET / HTTP/1.1" 200 -
+[ 2024-01-14 21:45:43,660 ] 15 root INFO - Error occurred in python script name [C:\Users\Atul kishore\Documents\Machine _Learning_Project_Pipelines\Machine_Learning_Pipelines-\app.py] line number [12] error message [we are testing our custom file]
+[ 2024-01-14 21:45:43,668 ] 96 werkzeug INFO - 127.0.0.1 - - [14/Jan/2024 21:45:43] "GET / HTTP/1.1" 200 -
