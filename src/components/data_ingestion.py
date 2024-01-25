@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
+from src.components.data_transformation import DataTransformation
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -24,7 +25,8 @@ class DataIngestion:
         try:
             logging.info("Data reading using pandas library from local system")
 
-            data = pd.read_csv(os.path.join("Notebook", "Mental Health Dataset.csv"))
+            data = pd.read_csv(os.path.join("Notebook/data","cleandata.csv"))
+            #Notebook/data/cleandata.csv
 
             logging.info("Data Reading Completed")
 
@@ -33,6 +35,7 @@ class DataIngestion:
             logging.info("Data split into train and test ")
 
             train_set, test_set = train_test_split(data, test_size=0.2, random_state=42)
+
             train_set.to_csv(self.ingestion_config.train_data_path, index=False, header=True)
 
             test_set.to_csv(self.ingestion_config.test_data_path, index=False, header=True)
@@ -51,3 +54,4 @@ class DataIngestion:
 if __name__ == "__main__":
     obj = DataIngestion()
     obj.initiate_data_ingestion()
+
