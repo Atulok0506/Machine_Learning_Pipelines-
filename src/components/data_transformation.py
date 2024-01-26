@@ -41,7 +41,6 @@ class DataTransformation:
 
     def remove_outliers_IQR(self, col, df):
         try:
-            print(f"Column: {col}, Data Type: {df[col].dtype}")
 
             # Use pd.api.types.is_numeric_dtype to check if the column is numeric
             if pd.api.types.is_numeric_dtype(df[col]):
@@ -54,8 +53,9 @@ class DataTransformation:
                 upper_limit = Q3 + 1.5 * iqr
                 lower_limit = Q1 - 1.5 * iqr
 
-                df.loc[(df[col] > upper_limit), col] = upper_limit
-                df.loc[(df[col] < lower_limit), col] = lower_limit
+                # Explicitly cast upper_limit and lower_limit to int
+                df.loc[(df[col] > upper_limit), col] = upper_limit.astype(int)
+                df.loc[(df[col] < lower_limit), col] = lower_limit.astype(int)
             else:
                 # Handle non-numeric columns in an appropriate way
                 pass
@@ -74,11 +74,11 @@ class DataTransformation:
                                   'race', 'sex', 'capital_gain', 'capital_loss', 'hours_per_week']
 
             for col in numerical_features:
-                self.remove_outliers_IQR(col=col, df=train_data)
+                train_data = self.remove_outliers_IQR(col=col, df=train_data)
             logging.info("Outliers capped on our train data")
 
             for col in numerical_features:
-                self.remove_outliers_IQR(col=col, df=test_data)
+                test_data = self.remove_outliers_IQR(col=col, df=test_data)
             logging.info("Outliers capped on our test data")
 
             preprocess_obj = self.get_data_transformation_obj()
