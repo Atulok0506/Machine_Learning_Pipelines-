@@ -2,7 +2,8 @@ from src.logger import logging
 from src.exception import CustomException
 import os, sys
 import pickle
-from sklearn.metrics import accuracy_score, confusion_matrix, precision_recall_curve, f1_score, precision_score, recall_score
+from sklearn.metrics import accuracy_score, confusion_matrix, precision_recall_curve, f1_score, precision_score, \
+    recall_score
 from sklearn.model_selection import GridSearchCV
 
 
@@ -14,6 +15,14 @@ def save_object(file_path, obj):
 
         with open(file_path, "wb") as file_obj:
             pickle.dump(obj, file_obj)
+    except Exception as e:
+        raise CustomException(e, sys)
+
+
+def load_object(file_path):
+    try:
+        with open(file_path, "rb") as file_object:
+            return pickle.load(file_object)
     except Exception as e:
         raise CustomException(e, sys)
 
